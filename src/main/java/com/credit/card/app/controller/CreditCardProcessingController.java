@@ -39,7 +39,8 @@ public class CreditCardProcessingController {
     @Operation(summary = "Fetch all card's details")
     @ApiResponses(value = {
             @ApiResponse(responseCode = "200", description = "Successful response"),
-            @ApiResponse(responseCode = "400", description = "Bad Request")
+            @ApiResponse(responseCode = "400", description = "Bad Request"),
+            @ApiResponse(responseCode = "500", description = "Internal server error")
     })
     public List<CardInfo> getAllCardInfo(){
         List<CardInfo> cardInfoList = creditCardService.getAllCardInfo();
