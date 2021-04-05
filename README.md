@@ -11,14 +11,21 @@ Swagger URL
 http://localhost:8088/swagger-ui/index.html
 
 
+Authentication
+---------------
+Api requrired basic authentication. 
+
+
 Method:
 -------
 1. POST /api/v1/credit-card  -save card informations
 2. GET /api/v1/credit-card   -get all card informations
 
+
 Supported Content Type
 ----------------------
 application/json
+
 
 Schemas
 -------
