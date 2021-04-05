@@ -39,3 +39,7 @@ CardInfo{
   createdBy	string
   updatedBy	string
 }
+
+To build Docker image
+----------------------
+mvn spring-boot:build-image
