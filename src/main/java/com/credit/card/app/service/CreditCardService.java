@@ -1,12 +1,11 @@
 package com.credit.card.app.service;
 
-import com.credit.card.app.entity.CardInfoEntity;
+import com.credit.card.app.domain.CardInfoEntity;
 import com.credit.card.app.exceptions.BusinessException;
 import com.credit.card.app.model.CardInfo;
 import com.credit.card.app.repository.CreditCardRepository;
 import lombok.AllArgsConstructor;
 import org.modelmapper.ModelMapper;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.MessageSource;
 import org.springframework.stereotype.Service;
 

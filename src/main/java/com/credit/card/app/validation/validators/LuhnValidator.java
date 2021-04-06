@@ -15,10 +15,11 @@ public class LuhnValidator implements ConstraintValidator<Luhn, String> {
     @Override
     public boolean isValid(String value, ConstraintValidatorContext context) {
         boolean isValidCard = false;
-        value = value.trim();
+
         if(value==null || value.isEmpty() ){
             return isValidCard;
         }
+        value = value.trim();
          if(!value.matches(regex)  || !isValidCreditCardNumber(value)){
           context.disableDefaultConstraintViolation();
           context.buildConstraintViolationWithTemplate("{invalid.card.no}").addConstraintViolation();
