@@ -1,12 +1,11 @@
 package com.credit.card.app.service;
 
 import static org.junit.jupiter.api.Assertions.*;
-import static org.mockito.Mockito.anyString;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
-import com.credit.card.app.entity.CardInfoEntity;
+import com.credit.card.app.domain.CardInfoEntity;
 import com.credit.card.app.exceptions.BusinessException;
 import com.credit.card.app.model.CardInfo;
 import com.credit.card.app.repository.CreditCardRepository;

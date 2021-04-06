@@ -18,19 +18,17 @@ public class LuhnValidatorTest {
                 null, "");
     }
 
-
-
-    @Test
-    public void should_return_false_for_empty_card_number() {
-        LuhnValidator luhnValidator = new LuhnValidator();
-        assertFalse(luhnValidator.isValid("", constraintValidatorContextImpl));
-    }
-
     @Test
     public void shoud_return_true() {
         LuhnValidator luhnValidator = new LuhnValidator();
         assertTrue(luhnValidator.isValid("012850003580200",
                 constraintValidatorContextImpl));
+    }
+
+    @Test
+    public void should_return_false_for_empty_card_number() {
+        LuhnValidator luhnValidator = new LuhnValidator();
+        assertFalse(luhnValidator.isValid("", constraintValidatorContextImpl));
     }
 
     @Test
@@ -53,6 +51,7 @@ public class LuhnValidatorTest {
         assertFalse(luhnValidator.isValid("71927398713",
                 constraintValidatorContextImpl));
     }
+
 
 
     @Test
